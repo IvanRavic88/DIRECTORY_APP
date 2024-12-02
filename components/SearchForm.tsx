@@ -13,11 +13,12 @@ const SearchForm = ({ query }: { query?: string }) => {
         placeholder="Search Startups"
       />
 
-      <div className="flex gap-2 " />
-      {query && <SearchFormReset />}
-      <Button type="submit" className="search-btn text-white">
-        <Search className="size-5" />
-      </Button>
+      <div className="flex gap-2 ">
+        {query && <SearchFormReset />}
+        <Button type="submit" className="search-btn text-white">
+          <Search className="size-5" />
+        </Button>
+      </div>
     </Form>
   );
 };
