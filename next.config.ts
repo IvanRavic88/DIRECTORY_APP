@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   images: {
     dangerouslyAllowSVG: true,
-    remotePatterns: [{ protocol: "https", hostname: "placehold.co" }],
+    remotePatterns: [{ protocol: "https", hostname: "*" }],
   },
   experimental: {
     ppr: "incremental",
